@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background: radial-gradient(ellipse at top, #1e1b4b 0%, #0b0b14 70%);
+      color: #f5f5f7;
+      font-family: "Inter Tight", system-ui, sans-serif;
+    }
+    h1 {
+      font-size: clamp(3.5rem, 14vw, 11rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff 30%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: rise 0.8s cubic-bezier(.2,.8,.2,1) both;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      h1 { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Version 1</h1>
+  </main>
+</body>
+</html>
